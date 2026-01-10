@@ -75,7 +75,172 @@ body {
 
 /* SECTION 2 */
 .s2 {
-    height: 100vh;
+    height: 110vh;
     background: #e9b3c2;
     /* rosa suave */
+}
+
+.s2 h2 {
+    padding-top: 5px;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-top: 15px;
+    max-width: 345px;
+    min-width: 345px;
+}
+
+.carrossel {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.card {
+    min-height: 300px;
+    min-width: auto;
+    scroll-snap-align: center;
+}
+
+.card img {
+    border-radius: 20px;
+    height: 300px;
+}
+
+.s2 p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #fdfdfd;
+}
+
+.s3 {
+    height: 118vh;
+    background-color: #fc6c95;
+}
+
+.s3 h2 {
+    padding-top: 5px;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+.s3 p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #fdfdfd;
+}
+
+.s4 {
+    height: auto;
+    background-color: #e9b3c2;
+}
+
+.s4 h2 {
+    padding-top: 5px;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+.unica-ft {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.unica-ft img {
+    height: 380px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.s4 p {
+    color: #fdfdfd;
+    text-align: justify;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+}
+
+.s5 {
+    height: auto;
+    background-color: #fc6c95;
+}
+
+.s5 h2 {
+    color: #fdfdfd;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.s5 p {
+    color: #fdfdfd;
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+}
+
+
+.final {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("../img/Foto-Final.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* MÁSCARA ROSADA + BLUR */
+.final::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(246, 170, 200, 0.65);
+    /* MAIS ROSA */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    z-index: 1;
+}
+
+/* CONTEÚDO FICA ACIMA */
+.final>* {
+    position: relative;
+    z-index: 2;
+}
+
+.fim {
+    display: flex;
+    flex-direction: column;
+    top:50%;
+}
+
+.fim h2 {
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.fim p {
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 0.9rem;
 }
