@@ -75,7 +75,7 @@ body {
 
 /* SECTION 2 */
 .s2 {
-    min-height: 111vh;
+    height: auto;
     background: #e9b3c2;
     /* rosa suave */
 }
@@ -90,7 +90,8 @@ body {
 .container {
     width: auto;
     height: 325px;
-    padding: 25px 15px;
+    margin-top: 25px;
+    padding: 0px 15px;
 }
 
 .carrossel {
@@ -117,14 +118,14 @@ body {
 .s2 p {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 15px;
+    padding-top: 5px;
     font-size: 0.9rem;
     text-align: justify;
     color: #fdfdfd;
 }
 
 .s3 {
-    height: 118vh;
+    height: 110vh;
     background-color: #fc6c95;
 }
 
